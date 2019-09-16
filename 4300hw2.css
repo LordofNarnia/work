@@ -27,8 +27,7 @@ body p {
 	color: white;
 }
 .main p::first-letter {
-        font-size: 200%;
-	color: red;
+        font-size: 150%;
 }
 .header::before {
 	<img src="soccerPicture.jpg" alt="Logo">
