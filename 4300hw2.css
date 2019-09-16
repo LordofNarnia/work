@@ -27,7 +27,7 @@ body p {
 	color: white;
 }
 .header::before {
-	<img src="soccerball.jpg" alt="Ball">
+	<img src="soccerPicture.jpg" alt="Logo">
 }
 .header h3 {
 	margin-left: 5px;
