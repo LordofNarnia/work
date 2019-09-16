@@ -1,0 +1,193 @@
+* {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	vertical-align: baseline;
+	background: transparent;
+	box-sizing: border-box;
+}
+body {
+	position: relative;
+	text-align: justify;
+	text-justify: auto;
+	background-attachment: fixed;
+	background-color: #006600;
+	background-image: url("background-tree.jpg");
+}
+body h1, body h2 {
+	text-transform: uppercase;
+}
+body p {
+	text-indent: 50px;
+}
+.header {
+	position: relative;
+	background-color: black;
+	color: white;
+}
+.header h3 {
+	margin-left: 5px;
+}
+
+/** Banner **/
+.banner {
+	//background-attachment: fixed;
+	position: relative;
+	background-color: #006600; 
+	background-image: url("background-tree.jpg");
+	background-image: url("soccerPicture.jpg");
+	color: white;
+	height: 500px;
+	text-align: center;
+}
+.banner div {
+	position: relative;
+	top:40%;
+	width: 50%;
+	left: 25%;
+	font-size: 40px;
+	background-color: black;
+}
+/* Banner */
+
+/**   Nav **/
+.topnav {
+	position: -webkit-sticky;
+	position: sticky;
+	top: 0;
+	overflow: hidden;	
+	background-color: black;
+	border: 1px solid black;
+}
+
+.topnav a {
+	float: left;
+	display: block;
+	color: white;
+	text-align: center;
+	padding: 12px 16px;
+	text-decoration: none;
+	font-weight: 700;
+}
+.topnav a:hover {
+	background-color: black;
+	color: white;
+}
+/* Nav */
+
+/** content **/
+.main {
+	float: left;
+	width: 50%;
+	font-size: 130%
+}
+
+.leftContent {
+	float: left;
+	width: 25%;
+	padding: 10px;
+}
+
+.leftContent .card {
+        background-color: #e60000;
+        color: black;
+}
+.rightContent .card {
+        background-color: #e6e600;
+}
+.rightContent {
+        float: right;
+        width: 25%;
+        padding: 10px;
+}
+/* content */
+
+/** card design **/
+.card {
+	background-color: white;
+	border: 1px solid black;
+	padding: 20px;
+	margin: 20px;
+	box-shadow: 5px 5px black;
+	min-height: 200px;
+	font-size: 130%;
+}
+.card table {
+	margin:10px auto;
+	width: 80%;
+	border-collapse: collapse;
+	text-align: center;
+	background-color: white;
+	outline: white solid 10px;
+}
+.card th {
+	border: 2px solid black;
+}
+.card td {
+	border-left: 2px solid black;
+}
+.card td:first-child {
+	border-left: 0;
+}
+
+.card h2, .card h3 {
+	padding-bottom: 10px;
+}
+/* card */
+
+.container:after{
+	content: "";
+	display: table;
+	clear: both;
+}
+.footer {
+	padding: 20px;
+	width: 100%;
+	text-align: center;
+	background: black;
+	color: white;
+}
+#ad {
+	position: fixed;
+	width: 90%;
+	height: 80px;
+	bottom: 20px;
+	left: 80px;
+	background-color: blue;
+	background-image: url("ad.jpg");
+	text-align: center;
+	color: black;
+}
+.closeButton {
+	position: absolute;
+	width: 20px;
+	height: 20px;
+	padding: 0;
+	top: 0;
+	right: 0;
+	border: 1px solid black;
+	background-color: white;
+	cursor: pointer;
+	text-align: center;
+	font-weight: 800;
+	color: black;
+}
+@media only screen and (max-width:1200px) {
+	.main, .leftContent, .rightContent {
+		width: 100%;
+	}
+	#ad {
+		width: 85%;
+	}
+}
+
+@media  print {
+	#ad {
+		display: none;
+	}
+	.main, .leftContent, .rightContent{
+		width: 100%;
+	}
+}
+
